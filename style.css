@@ -1,0 +1,35 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 25%;
+    max-width: 25%;
+    height: 400px;
+    border: 2px solid black;
+   
+}
+
+@media screen and (max-width:800px){
+    .column{
+        flex:50%;
+        max-width:50%;
+        background: blue;
+    }
+
+}
+
+@media screen and (max-width:500px){
+.column{
+    flex:100%;
+    max-width:100%;
+}
+}
